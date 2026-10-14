@@ -23,7 +23,7 @@ Geliştirici: **[Alze Kimya](https://alzekimya.com/)** — Türkiye'nin mum, sab
 ## Kurulum
 
 ### Chrome Web Store'dan (önerilen)
-> Mağaza linki onaylandığında buraya eklenecek.
+> Hemen İndir -> https://chromewebstore.google.com/detail/mum-hammadde-hesaplay%C4%B1c%C4%B1/gcamjpdgfaaiciepfnaokjfnibgkhndm
 
 ### Geliştirici modunda (paketlenmemiş yükleme)
 1. Bu repoyu indirin veya klonlayın: `git clone https://github.com/<kullanici-adi>/mum-hammadde-hesaplayici.git`
