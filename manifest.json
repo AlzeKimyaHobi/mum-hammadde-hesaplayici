@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Mum Hammadde Hesaplayıcı - Alze Kimya",
+  "short_name": "Mum Hesaplayıcı",
+  "version": "1.1.0",
+  "description": "Kalıp veya kabınızın ölçüsünü girin, mum yapımı için gereken hammadde miktarını saniyeler içinde hesaplayın.",
+  "author": "Alze Kimya",
+  "homepage_url": "https://alzekimya.com/",
+  "action": {
+    "default_title": "Mum Hammadde Hesaplayıcı",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

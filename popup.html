@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mum Hammadde Hesaplayıcı</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="icon48.png" alt="Alze Kimya" class="logo" />
+    <div>
+      <h1>Mum Hammadde Hesaplayıcı</h1>
+      <span class="brand">Alze Kimya</span>
+    </div>
+  </header>
+
+  <main>
+    <label for="hammadde">Hammadde</label>
+    <select id="hammadde">
+      <option value="soya_wax">Soya Wax</option>
+      <option value="parafin">Parafin</option>
+      <option value="balmumu">Balmumu</option>
+      <option value="coconut_wax">Coconut Wax</option>
+      <option value="rafine_soya">Rafine Soya</option>
+      <option value="jel_mum">Jel Mum</option>
+      <option value="stearin">Stearin</option>
+      <option value="beyaz_balmumu">Beyaz Balmumu</option>
+      <option value="carnauba_wax">Carnauba Wax</option>
+      <option value="mikrokristalin">Mikrokristalin</option>
+    </select>
+
+    <label for="kapTipi">Kalıp / Kap Türü</label>
+    <select id="kapTipi">
+      <option value="silikon">Silikon Kalıp</option>
+      <option value="dikdortgen">Dikdörtgen Bardak/Kap</option>
+      <option value="yuvarlak">Yuvarlak Bardak/Kap</option>
+    </select>
+
+    <div id="alanSilikon" class="kap-alan">
+      <label for="suGrami">Kaç gram su alıyor?</label>
+      <input type="number" id="suGrami" min="0" step="0.1" placeholder="örn. 200" />
+    </div>
+
+    <div id="alanDikdortgen" class="kap-alan hidden">
+      <label for="en">En (cm)</label>
+      <input type="number" id="en" min="0" step="0.1" />
+      <label for="boy">Boy (cm)</label>
+      <input type="number" id="boy" min="0" step="0.1" />
+      <label for="yukseklikDik">Yükseklik (cm)</label>
+      <input type="number" id="yukseklikDik" min="0" step="0.1" />
+    </div>
+
+    <div id="alanYuvarlak" class="kap-alan hidden">
+      <label for="cap">Çap (cm)</label>
+      <input type="number" id="cap" min="0" step="0.1" />
+      <label for="yukseklikYuv">Yükseklik (cm)</label>
+      <input type="number" id="yukseklikYuv" min="0" step="0.1" />
+    </div>
+
+    <label for="adet">Kaç adet yapacaksınız?</label>
+    <input type="number" id="adet" min="1" step="1" value="1" />
+
+    <button id="hesaplaBtn">Hesapla</button>
+
+    <section id="sonuc" class="sonuc hidden">
+      <div class="sonuc-satir"><span>Wax</span><strong id="sonucWax"></strong></div>
+      <div class="sonuc-satir"><span>Esans (önerilen ~%8)</span><strong id="sonucEsans"></strong></div>
+      <div class="sonuc-satir toplam"><span>Toplam</span><strong id="sonucToplam"></strong></div>
+      <a id="satinAlLink" class="btn-satin-al" href="#" target="_blank" rel="noopener">
+        alzekimya.com'da ürünü görüntüle →
+      </a>
+    </section>
+
+    <p class="uyari">
+      Hesaplamalar matematikseldir, kesin sonuç garanti etmez. Hammaddenin
+      cinsine ve katkı maddelerine göre değişebilir.
+    </p>
+  </main>
+
+  <footer>
+    <a href="https://alzekimya.com/" target="_blank" rel="noopener">alzekimya.com</a>
+  </footer>
+
+  <script src="calc.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

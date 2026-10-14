@@ -1,0 +1,153 @@
+:root {
+  --turkuaz: #5797B2;
+  --koyu-turkuaz: #3f5e6a;
+  --sari: #FBCD0C;
+  --indirim: #F02C75;
+  --bg: #ffffff;
+  --text: #23343a;
+  --border: #dbe6e9;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 300px;
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--koyu-turkuaz);
+  color: #fff;
+}
+
+.header .logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.header h1 {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header .brand {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+main {
+  padding: 14px 16px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 10px 0 4px;
+  color: var(--koyu-turkuaz);
+}
+
+select, input[type="number"] {
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text);
+  background: #fafdfe;
+}
+
+select:focus, input:focus {
+  outline: 2px solid var(--turkuaz);
+  outline-offset: 1px;
+}
+
+.kap-alan.hidden { display: none; }
+
+button#hesaplaBtn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: var(--turkuaz);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button#hesaplaBtn:hover { background: var(--koyu-turkuaz); }
+
+.sonuc {
+  margin-top: 14px;
+  padding: 12px;
+  background: #f3f9fa;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.sonuc.hidden { display: none; }
+
+.sonuc-satir {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+.sonuc-satir.toplam {
+  border-top: 1px solid var(--border);
+  margin-top: 4px;
+  padding-top: 8px;
+  font-size: 15px;
+}
+
+.sonuc-satir.toplam strong {
+  color: var(--indirim);
+}
+
+.btn-satin-al {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  padding: 9px;
+  background: var(--sari);
+  color: var(--koyu-turkuaz);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.btn-satin-al:hover { opacity: 0.9; }
+
+.uyari {
+  margin-top: 12px;
+  font-size: 10.5px;
+  color: #77898e;
+  line-height: 1.4;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  border-top: 1px solid var(--border);
+}
+
+footer a {
+  font-size: 11px;
+  color: var(--turkuaz);
+  text-decoration: none;
+}
